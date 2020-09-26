@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
 
 # Dalvik
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk )
 
 # Display
 PRODUCT_PACKAGES += \
@@ -512,9 +512,6 @@ PRODUCT_PACKAGES += \
     rild \
     telephony-ext
 
-# RIL JAR
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
